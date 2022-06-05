@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: -webkit-linear-gradient(45deg, rgba(136, 43, 155, 0.6), rgba(126, 213, 105, 0.6));
+  font-family: Suruma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  background: -webkit-linear-gradient(60deg, rgba(136, 43, 55, 0.9), rgba(36, 43, 55, 0.3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.8rem;
+  padding: 20px 20px 0;
+}
+.form_container {
+  background: -webkit-linear-gradient(180deg, rgba(136, 43, 55, 0.3), rgba(36, 43, 55, 0.15));
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  color: rgba(36, 43, 55, 0.7);
+  & > * {
+    padding: 15px;
+  }
+  .course-name {
+    padding-top: 0;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    input,
+    select {
+      max-width: 500px;
+      height: 2rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      border-radius: 0.6rem;
+      color: rgba(36, 43, 55, 0.7);
+      font-size: 1.2rem;
+      font-family: Suruma, sans-serif;
+      padding: 5px 5px 0;
+      outline: none;
+    }
+    input:focus,
+    select:focus,
+    input:active,
+    select:active {
+      border: 2px solid rgba(36, 43, 55, 0.7);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    }
+    h5 {
+      font-weight: bolder;
+      margin-bottom: 0.33rem;
+    }
+  }
+  .show-option {
+    display: none;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    width: 200px;
+    height: 70px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right top, rgba(126, 213, 105, 0.2), rgba(255, 255, 255, 0.9));;
+    color: rgba(36, 43, 55, 0.7);
+    font-size: 1.5rem;
+    font-family: Suruma, sans-serif;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(126, 213, 105, 0.4);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    }
+  }
+  .info-container {
+    display: none;
+    height: 32px;
+    margin-bottom: 1rem;
+    text-align: center;
+    .info-message {
+      font-size: 1.5rem;
+    }
+  }
+}
